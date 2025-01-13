@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ContactsController {
 
-    @GetMapping("/welcome")
-    public String sayWelcome() {
-        return "Welcome to Spring Application with out security";
+    @GetMapping("/contact")
+    public String getContactInquiryDetails() {
+        return "Here are the contact details from DB";
     }
 }

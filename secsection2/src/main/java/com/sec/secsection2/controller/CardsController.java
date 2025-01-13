@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CardsController {
 
-    @GetMapping("/welcome")
-    public String sayWelcome() {
-        return "Welcome to Spring Application with out security";
+    @GetMapping("/myCards")
+    public String getCardsDetails() {
+        return "Here are the cards details from DB";
     }
 }
