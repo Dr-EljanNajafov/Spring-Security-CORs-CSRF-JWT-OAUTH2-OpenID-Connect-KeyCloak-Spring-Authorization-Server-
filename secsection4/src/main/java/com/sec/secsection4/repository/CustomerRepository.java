@@ -1,6 +1,6 @@
-package com.sec.secsection3.repository;
+package com.sec.secsection4.repository;
 
-import com.sec.secsection3.model.Customer;
+import com.sec.secsection4.model.Customer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

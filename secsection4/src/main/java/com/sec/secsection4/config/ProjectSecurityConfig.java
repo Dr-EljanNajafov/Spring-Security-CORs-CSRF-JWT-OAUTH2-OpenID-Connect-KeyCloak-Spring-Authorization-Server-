@@ -1,4 +1,4 @@
-package com.sec.secsection3.config;
+package com.sec.secsection4.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

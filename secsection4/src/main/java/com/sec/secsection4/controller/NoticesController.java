@@ -1,4 +1,4 @@
-package com.sec.secsection3.controller;
+package com.sec.secsection4.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

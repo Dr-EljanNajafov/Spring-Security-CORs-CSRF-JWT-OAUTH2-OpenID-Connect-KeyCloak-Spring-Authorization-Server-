@@ -1,4 +1,4 @@
-package com.sec.secsection3.model;
+package com.sec.secsection4.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
