@@ -1,5 +1,6 @@
 package com.sec.secsection4.config;
 
+import com.sec.secsection7.exceptionhandling.CustomAccessDeniedHandler;
 import com.sec.secsection7.exceptionhandling.CustomBasicAuthenticationEntryPoint;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,6 +29,7 @@ public class ProjectSecurityConfig {
                 .requestMatchers("/contact", "/notices", "/error", "/register").permitAll());
         http.formLogin(withDefaults());
         http.httpBasic(hbc -> hbc.authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint()));
+        http.exceptionHandling(ehc -> ehc.accessDeniedHandler(new CustomAccessDeniedHandler()));
         return http.build();
     }
 
