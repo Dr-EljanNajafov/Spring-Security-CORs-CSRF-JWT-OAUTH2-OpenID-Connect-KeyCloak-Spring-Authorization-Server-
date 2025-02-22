@@ -28,6 +28,7 @@ public class ProjectSecurityConfig {
                 .requestMatchers("/contact", "/notices", "/error", "/register").permitAll());
         http.formLogin(withDefaults());
         http.httpBasic(hbc -> hbc.authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint()));
+        http.httpBasic(withDefaults());
         return http.build();
     }
 
