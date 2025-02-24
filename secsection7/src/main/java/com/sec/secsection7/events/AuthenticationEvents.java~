@@ -1,4 +1,0 @@
-package com.sec.secsection7.events;
-
-public class AuthenticationEvents {
-}
